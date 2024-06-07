@@ -1,0 +1,3 @@
+// A diferença entre o tipo Valor e o Tipo referência é que o tipo valor tem tamanho definido, e o tipo referência não tem um limite definido.
+
+//outra diferença é como eles funcionam - lembrar de pesquisar mais...
