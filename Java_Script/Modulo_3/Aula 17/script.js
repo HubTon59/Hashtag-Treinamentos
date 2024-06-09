@@ -26,13 +26,24 @@ console.log(`Meu objeto pokemon possui Habilidade: ${Pokemon.habilidade}`);
 
 console.log('O Resultado do exercício 3 é:');
 
-const Valor1 = 12;
-const Valor2 = 45;
+let Valor1 = 12;
+let Valor2 = 45;
 
+console.log('Primeiro formato:')
 console.log(`O resultodo da operação aritimética "+"(Soma) entre as duas variáves é: ${Valor1 + Valor2}`);
 console.log(`O resultodo da operação aritimética "-"(Subitração) entre as duas variáves é: ${Valor1 - Valor2}`);
 console.log(`O resultodo da operação aritimética "/"(Divizão) entre as duas variáves é: ${Valor1 / Valor2}`);
 console.log(`O resultodo da operação aritimética "*"(Multiplicação) entre as duas variáves é: ${Valor1 * Valor2}`);
+
+console.log('Segundo formato:')
+const sum = Valor1 + Valor2;
+const sub = Valor1 - Valor2;
+const div = Valor1 / Valor2;
+const mult = Valor1 * Valor2;
+console.log(`O resultodo da operação aritimética "+"(Soma) entre as duas variáves é: ${sum}`);
+console.log(`O resultodo da operação aritimética "-"(Subitração) entre as duas variáves é: ${sub}`);
+console.log(`O resultodo da operação aritimética "/"(Divizão) entre as duas variáves é: ${div}`);
+console.log(`O resultodo da operação aritimética "*"(Multiplicação) entre as duas variáves é: ${mult}`);
 
 console.log('O Resultado do exercício 4 é:');
 
