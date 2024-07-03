@@ -8,7 +8,7 @@ function enviarMensagem() {
 
 //Cadastro do usuário
 function cadastrar(nome, sobrenome) {
-    console.log(`Olá ${Nome} ${sobrenome}, você foi cadastrado com sucesso!`);
+    console.log(`Olá ${nome} ${sobrenome}, você foi cadastrado com sucesso!`);
 }
 //cadastrar("Elton", "Oliveira");
 
