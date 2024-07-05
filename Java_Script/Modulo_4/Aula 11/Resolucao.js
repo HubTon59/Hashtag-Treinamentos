@@ -1,31 +1,31 @@
 // Resolução do exercício 1
 
 function calcularMedia(nota1, nota2, nota3) {
-    return (nota1 + nota2 + nota3)/3;
+    const mediaDasNotas = (nota1 + nota2 + nota3)/3;
+    console.log (`A média desse aluno é ${mediaDasNotas}`);
+    return mediaDasNotas;
 }
 
-const media = calcularMedia(75, 60, 80);
-console.log (`A media desse aluno é ${media}`);
+calcularMedia (75, 60, 70);
 
 
 // Resolução do exercício 2
 
-function calcularMediaProvaFinal(notaPF) {
-    return (media + notaPF)/2;
+function calcularMediaProvaFinal(nota1, nota2, nota3, notaPF) {
+    const mediaDasNotas = calcularMedia(nota1, nota2, nota3);
+    const mediaFinal = (mediaDasNotas + notaPF)/2;
+    console.log (`A média final desse aluno é ${mediaFinal}`);
 }
 
-const mediaFinal = calcularMediaProvaFinal(90);
-console.log (`A média final desse aluno é ${mediaFinal}`);
+calcularMediaProvaFinal(75, 60, 70, 90);
 
 
 // Resolução exercício 3
 
 function convercaoDeTemperatura(temperatura) {
-    return (9/5)*(temperatura) + 32;
+    const temperaturaEmFarenheit = (9/5)*(temperatura) + 32;
+    console.log(`A temperatura corespondente em Farenheit é ${temperaturaEmFarenheit}`);
 }
-
-const temperaturaEmFarenheit = convercaoDeTemperatura(35);
-console.log(`A temperatura corespondente em Farenheit é ${temperaturaEmFarenheit}`);
 
 
 // Resolução exercício 4
