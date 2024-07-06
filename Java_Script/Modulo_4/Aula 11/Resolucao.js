@@ -24,16 +24,16 @@ calcularMediaProvaFinal(75, 60, 70, 90);
 
 function convercaoDeTemperatura(temperatura) {
     const temperaturaEmFarenheit = (9/5)*(temperatura) + 32;
-    console.log(`A temperatura corespondente em Farenheit é ${temperaturaEmFarenheit}`);
+    console.log(`A temperatura corespondente em Farenheit é ${temperaturaEmFarenheit}°F`);
 }
 
+convercaoDeTemperatura(35);
 
 // Resolução exercício 4
 
 function calcularImposto(valorProduto) {
-    return valorProduto + 0.08875;
+    const valorFinal= 1.08875 * valorProduto;
+    console.log(`O valor a ser pago é ${valorFinal}`);
 }
 
-const novoValorDoProduto = calcularImposto(85);
-
-console.log(`O valor a ser pago é ${novoValorDoProduto}`);
+calcularImposto(185);
