@@ -18,16 +18,14 @@ function calculatePythagoras(side1, side2) {
 //   `A hipotenusa de um triangulo de lados 3 e 4 é: ${calculatePythagoras(3, 4)}`
 //);
 
-const firstSidePart1Ref = document.getElementById('side-1-1');
-const firstSidePart2Ref = document.getElementById('side-1-2');
-const secondSidePart1Ref = document.getElementById('side-2-1');
-const secondSidePart2Ref = document.getElementById('side-2-2');
+const firstSideRef = document.getElementById('side-1');
+const secondSideRef = document.getElementById('side-2');
 const calculateButton = document.getElementById('calculate-hypotenuse');
 const answerDiv = document.getElementById('answer');
 
 function onCalculateButtonClick() {
-  const firstSide = add(parseInt(firstSidePart1Ref.value), parseInt(firstSidePart2Ref.value));
-  const secondSide = add(parseInt(secondSidePart1Ref.value), parseInt(secondSidePart2Ref.value));
+  const firstSide = firstSideRef.value;
+  const secondSide = secondSideRef.value;
   // console.log('function executed');
   answerDiv.classList.remove('hidden-element');
   answerDiv.innerHTML = `A hipotenusa de um triangulo de lados ${firstSide} e ${secondSide} é: ${calculatePythagoras(
@@ -37,11 +35,6 @@ function onCalculateButtonClick() {
     .toFixed(3)
     .replace(/[.,]000$/, '')}
   <div class="left-point"></div>`;
-}
-
-function add(num1, num2) {
-  const result = num1 + num2;
-  return result;
 }
 
 calculateButton.addEventListener('click', onCalculateButtonClick);
